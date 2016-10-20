@@ -74,7 +74,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('-d','--device', help='Default iOS device', required=True)
     parser.add_argument('-n','--name', help='Name of file to search', required=True)
-    parser.add_argument('-r','--runtime', help='Device runtime')
+    parser.add_argument('-r','--runtime', help='Device runtime, Default: 10-0')
     parser.add_argument('-p', '--print', dest='print_list', help='Print list of device name and uuid', action='store_true')
     parser.set_defaults(runtime='10-0', print_list=False)
     args = parser.parse_args()
